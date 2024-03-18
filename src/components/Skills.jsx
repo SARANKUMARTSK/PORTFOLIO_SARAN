@@ -6,7 +6,7 @@ import { faJs,faCss3Alt,faHtml5,faReact,faNode,faGithub,faBootstrap} from '@fort
 function Skills() {
     return <>
             <Element name='skills' className='skill_container'>
-           <h1 className='skill_title'>My Skills</h1>
+           <h1 className='skill_title'>Skills</h1>
                 <div className='skill_details_container'>
                     <div className='skill_details html'>
                     <FontAwesomeIcon className='html_icon' icon={faHtml5} />

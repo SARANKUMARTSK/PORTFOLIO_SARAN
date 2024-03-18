@@ -9,7 +9,7 @@ import ViewCompactAltIcon from '@mui/icons-material/ViewCompactAlt';
 function Projects() {
   return <>
   <div name="projects" className='project_page'>
-    <h1 className='page_heading'>My Projects</h1>
+    <h1 className='page_heading'>Projects</h1>
     <div className='project_container'>
 
       <div className='project_card'>

@@ -11,6 +11,10 @@ import resume from '../assets/resume/myResume.pdf'
 function Contact() {
   let date = new Date();
   let year = date.getFullYear();
+
+  function makePhoneCall(phoneNumber) {
+    window.location.href = 'tel:' + phoneNumber;
+  }
   // console.log(year);
   return <>
   <Element name="contact" className='footer_page'>
@@ -24,8 +28,8 @@ function Contact() {
    </div>
    <div className='footer_about3'>
    <h3>CONTACT ME @</h3>
-    <h6><FontAwesomeIcon icon={faTeamspeak} />&nbsp;8675750594</h6>
-    <h6><FontAwesomeIcon icon={faEnvelope} />&nbsp;sarankumartsk@gmail.com</h6>
+    <h6 onClick={()=>makePhoneCall('8675750594')}><FontAwesomeIcon icon={faTeamspeak} />&nbsp;8675750594</h6>
+    <h6><FontAwesomeIcon icon={faEnvelope} />&nbsp;<a style={{textDecoration:"none",color:"inherit"}} href="mailto:sarankumartsk@gmail.com">sarankumartsk@gmail.com</a></h6>
    <div className='footer_flex_icons'>
      <a style={{color:"white"}} href="https://www.linkedin.com/in/saran-kumar-17563a250/"><FontAwesomeIcon icon={faLinkedin} /></a>
     <a style={{color:"white"}} href="https://github.com/SARANKUMARTSK"><FontAwesomeIcon icon={faGithub} /></a>
