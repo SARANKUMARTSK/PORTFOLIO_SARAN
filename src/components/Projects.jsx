@@ -11,6 +11,7 @@ function Projects() {
   <div name="projects" className='project_page'>
     <h1 className='page_heading'>My Projects</h1>
     <div className='project_container'>
+
       <div className='project_card'>
         <img src={orderManagementIcon} alt="" />
         <div>
@@ -36,24 +37,11 @@ function Projects() {
         </div>
 
       </div>
-
       <div className='project_card'>
       <img src={weatherApp} alt="" />
         <div>
             <p>Weather App</p>
             <span>HTML , CSS & JS </span>
-        </div>
-        <div className='project_icon'>
-            <GitHubIcon/>
-            <ViewCompactAltIcon/>
-        </div>
-      </div>
-
-      <div className='project_card'>
-      <img src={shopHome} alt="" />
-        <div>
-            <p>Weather App</p>
-            <span>HTML , CSS , JS & React </span>
         </div>
         <div className='project_icon'>
             <GitHubIcon/>
