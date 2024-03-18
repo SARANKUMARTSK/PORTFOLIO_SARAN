@@ -1,0 +1,584 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Great+Vibes&family=IM+Fell+DW+Pica+SC&family=Jockey+One&family=Praise&display=swap');
+/* font-family: "IM Fell DW Pica SC",sans-serif ; */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Euphoria+Script&family=Great+Vibes&family=IM+Fell+DW+Pica+SC&family=Jockey+One&family=Praise&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+/* font-family: "Roboto Flex", sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Concert+One&family=Dancing+Script:wght@400..700&family=Single+Day&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cute+Font&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+/* common  */
+#light_mode{
+   color: black;
+   background-color:white ;
+}
+#dark_mode{
+  color: white;
+  background-color: black;
+}
+.page_heading{
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: darkcyan;  
+}
+
+:root{
+  --bg_green :gray
+}
+
+
+/*TopBar*/
+
+#bg-white{
+   color: black;
+   background-color:white ;
+   z-index: 11111111111;
+}
+#bg_black{
+  color: white;
+  background-color: black;
+}
+.mode_icon>svg{
+  font-size: 40px;
+  margin-left:20px;  
+  z-index: 1000;
+ backdrop-filter: blur(50px);
+ }
+ .mode_icon>svg:hover{
+   filter:drop-shadow(2px 2px 15px);
+ }
+.navbar{
+    display: flex;
+    position: sticky !important;
+    margin-top: 0px;
+    top: 0;
+    z-index: 3 !important;
+    box-shadow: 1px 1px 10px ;
+} 
+.nav_height_auto{
+  height: 200px !important;
+  transition: ease ;
+  transform: translateY();
+}
+.nav_height_fixed{
+  transition: ease 600ms;
+  transform: translateY();
+  height: 100px;
+}
+.navbar_left>h1{
+    letter-spacing: 1px;
+    padding: 20px 0;
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+    font-family: "IM Fell DW Pica SC",sans-serif, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    cursor: pointer;
+}
+.navbar_left{
+    flex: 0.4;
+    
+}
+.navbar_right{  
+    display: flex;
+    flex: 0.6;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+   
+}
+.navbar_right>a>h4:hover{
+     opacity: 1;
+}
+
+.navbar_right>a>h4{
+    padding: 5px 20px;
+    border-radius: 6px;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 18px;   
+    opacity: 0.7;
+    word-break: keep-all;
+}
+.nav_a_show{
+  display: block;
+
+}
+.navbar_right_button{
+    background-color: orangered;
+    border-radius: 6px !important;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+.show_menu>svg{
+  display: none;
+}
+
+
+@media screen and (max-width:767px) {
+    .navbar_right>a>h4{
+        display: block; 
+    }  
+    .navbar_right{
+      flex: 0.4;
+    }
+    .navbar_left{
+      flex: 0.6;
+    }
+}
+@media screen and (min-width:1000px) {
+  .navbar_right{
+      display: flex; 
+  }  
+}
+
+@media screen and (max-width:1000px) {
+.navbar{
+  width: 100%;
+  height: 100px;
+}
+.navbar_right>a{
+  display: none;
+}
+.navbar_right{
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 30%;
+}
+.navbar_left{
+  text-align: center;
+  padding-left: 20px;
+}
+.show_menu>svg{
+  font-size: 30px;
+  padding: 30px;
+  display: block;
+}
+
+}
+
+/*About Page*/
+
+.about_page{
+  padding-top: 50px;
+  display: flex;
+  height: 80vh;
+}
+.about_content{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+}
+.image_container{
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+.image_container>img{
+  border-radius: 50%;
+  animation: floatImage 4s ease-in-out infinite ;
+  height: 300px;
+  width: 300px;
+}
+
+@keyframes floatImage {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(-2.4rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width:1000px) {
+  .about_page{
+    display: block;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  .about_content{
+    width: 100%;
+  }
+  .image_container{
+    width: 100%;
+    padding-top: 50px;
+  }
+  .image_container>img{
+    height: 300px;
+    width: 300px;
+  }
+}
+.name_container{
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+.name_container>h1>span{
+  color: darkcyan;
+  font-weight: 800;
+  text-shadow: 1px 1px 1px black;
+}
+
+.button_container>button{
+  border-radius: 8px;
+  padding: 5px;
+  margin: 10px;
+  border: 2px solid darkcyan;
+  background-color: white;
+  color: darkcyan;
+  font-weight: 900;
+  opacity: 0.5;
+ 
+}
+.button_container>button:hover{
+box-shadow: 2px 2px 5px ;
+opacity: 1;
+}
+.icon_container{
+  display: flex;
+  font-size: 40px;
+  gap: 80px;
+}
+.icon_container>svg:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: ease-in 200ms;
+}
+.icon_container>a{
+  text-decoration: none;
+  color: inherit;
+}
+.icon_container>a:hover{
+  filter: drop-shadow(1px 1px 5px skyblue);
+}
+
+
+/* Skills page  */
+.skill_container{
+    height: auto;
+    border-radius: 10px;
+    
+}
+.skill_details{
+    border: 2px solid ;
+    width: 160px;
+    height: 160px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px;
+}
+.skill_details>h2{
+  font-size: 20px;
+}
+
+.skill_details:hover{
+    cursor: pointer;
+    transition: transform 300ms ease-in-out;
+    transform: scale(1.09);
+}
+.skill_details_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap:50px;
+    padding: 50px;
+}
+
+.skill_title{
+    margin-top: 50px;
+    color: darkcyan;
+    text-align: center;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 1px ;
+}
+
+.js_icon{
+    color: rgb(239, 239, 14);
+    font-size:120px ;
+    
+}
+.css_image{
+    width: auto;
+    height: 120px;
+    padding: 5px;
+}
+.html_icon{
+    color: orangered;
+    font-size: 120px;
+}
+.css_icon{
+    color: blue;
+    font-size: 120px;
+}
+.react_icon{
+    color: rgb(18, 164, 222);
+    font-size:120px ;
+}
+.node_icon{
+    color:lawngreen;
+    font-size:120px ;
+}
+.git_hub{
+    font-size:120px ;
+}
+.express_icon{
+    font-size: 80px;
+}
+.img_mongodb{
+    height: 115px;
+    width: 150px;
+    border-radius: 8px;
+    padding-top: 12px;
+}
+.bootstrap_icon{
+    color:blue;
+    font-size:120px ;
+}
+/* ````````````````````````````````````````````````````````````````````````````````````````````````````````````````` */
+/* Project Page  */
+.project_page{
+  /* padding: 50px; */
+  height: auto;
+
+}
+.project_container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  justify-content: space-evenly;
+}
+.project_card{
+  height: 300px;
+  width: 402px;
+  border: 1px solid wheat;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-image: linear-gradient(rgb(27, 198, 210), rgb(6, 58, 91));
+  transition: 800ms;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  color: white;
+  box-shadow: 1px 1px 5px;
+}
+.project_card:hover{
+  box-shadow: 2px 2px 10px ;
+}
+.project_card>img{
+  height: 298px;
+  width: 400px;
+  position: absolute;
+  border-radius: 20px;
+}
+.project_card>img:hover{
+  cursor: pointer;
+}
+.project_card>div{
+position: relative;
+margin-top: 20px;
+text-align: center;
+font-weight: 900;
+font-size: 25px;
+display: none;
+}
+
+.project_card:hover>div{
+  display: block;
+}
+
+.project_card:hover>img{
+  z-index: 0;
+  opacity: 0.1;
+  transition: all 200ms;
+}
+.project_card>div>span{
+  font-size: 15px;
+}
+.project_icon>svg{
+font-size: 40px;
+cursor: pointer;
+margin: 50px;
+}
+.project_icon{
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly; 
+}
+.project_icon>svg:hover{
+  filter:drop-shadow(2px 2px 15px);
+  transform: scale(1.1);
+  transition: ease-in-out 200ms;
+}
+
+@media screen and (max-width:930px) {
+  .project_card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  
+}
+@media screen and (max-width:435px) {
+  .project_card>img{
+    width:100%;
+  }
+  .project_card{
+    width: 100%;
+  }
+}
+
+
+/* Contact Page  */
+
+.footer_page{
+    margin-top: 20px;
+    padding: 50px;
+    padding-left: 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .footer_copyRights{
+    height: 80px;
+    background-color: black;
+    border-top: 2px solid bisque;
+  }
+  .copy{
+       color: beige ;
+       text-align: center;
+       margin-top: 20px;
+       text-shadow: 1px 1px 3px beige;
+  }
+  .orderIcon_footer{
+    color: white;
+    display: inline;
+    font-family: "Concert One", sans-serif;
+    padding: 50px;
+  }
+  .orderIcon_footer>h4>span{
+    color: orangered;
+    display: inline !important;
+    font-size: 30px;
+  }
+  .icon_footer{
+    color: white;
+    font-size: 40px;
+  }
+  .footer_adress{
+    font-family: "Concert One", sans-serif;
+    color: white;
+    padding: 20px;
+    font-weight: 500;
+  }
+  .footer_about{
+    text-align: center;
+    cursor: pointer;
+  }
+  .footer_about3{
+    text-align: center;
+    font-family: "Concert One", sans-serif;
+    cursor: pointer;
+  }
+  .footer_about3>h3{
+    text-decoration: underline;
+    color: orangered;
+  }
+  .footer_flex_icons{
+    font-size: 30px;
+    color: white ;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer_about3>h6{
+    text-decoration: underline;
+    color: white;
+    padding: 10px;
+  }
+  .footer_flex_icons>a>svg:hover{
+    color: greenyellow;
+  } 
+  .footer_about3>h6:hover{
+    color: greenyellow;
+  }
+  .footer_about2{
+    align-items:center ;
+    text-align: center;
+    font-family: "Concert One", sans-serif;
+  }
+  .footer_about2>h3{
+    color: orangered;
+  }
+  .footer_about2>a>svg{
+    color: white;
+    font-size: 50px;
+  }
+  .footer_about2>a>svg:hover{
+    color: greenyellow;
+  }
+
+
+
+  /* experience page  */
+  .experience_page{
+    padding-top: 50px;
+  }
+  .experience_container{
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .exp_image>img{
+    height: 200px;
+    width: 200px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
