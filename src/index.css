@@ -428,21 +428,27 @@ margin: 50px;
 
 @media screen and (max-width:930px) {
   .project_card{
+    width:50%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 20px; 
     justify-content: center; 
     align-items: center;
+    margin: 10px;
+  }
+  .project_card>img{
+    width: 50%;
+
   }
   
   
 }
-@media screen and (max-width:435px) {
+@media screen and (max-width:600px) {
   .project_card>img{
-    width:100%;
+    width:80%;
   }
   .project_card{
-    width: 100%;
+    width: 80%;
   }
 }
 
