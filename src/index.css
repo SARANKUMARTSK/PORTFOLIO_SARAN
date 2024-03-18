@@ -386,7 +386,6 @@ opacity: 1;
   width: 30%;
   min-height: 280px;
   position: absolute;
-  border-radius: 20px;
 }
 .project_card>img:hover{
   cursor: pointer;
