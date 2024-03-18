@@ -373,7 +373,6 @@ opacity: 1;
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(rgb(27, 198, 210), rgb(6, 58, 91));
-  transition: 800ms;
   align-items: center;
   justify-content: center;
   border-radius: 20px;
@@ -402,9 +401,7 @@ opacity: 1;
 }
 
 .project_card:hover>img{
-  z-index: 0;
   opacity: 0.1;
-  transition: all 200ms;
 }
 .project_card>div>span{
   font-size: 15px;
