@@ -47,8 +47,12 @@
   color: white;
   background-color: black;
 }
+
 .mode_icon>svg{
-  font-size: 40px;
+  background-color: aquamarine;
+  border: 1px groove blue;
+  border-radius: 5px ;
+  font-size: 20px;
   margin-left:20px;  
   z-index: 1000;
  backdrop-filter: blur(50px);
@@ -58,6 +62,7 @@
  }
 .navbar{
     display: flex;
+    padding: 15px;
     position: sticky !important;
     margin-top: 0px;
     top: 0;
@@ -65,7 +70,7 @@
     box-shadow: 1px 1px 10px ;
 } 
 .nav_height_auto{
-  height: 200px !important;
+  height: 220px !important;
   transition: ease ;
   transform: translateY();
 }
@@ -194,6 +199,7 @@
   animation: floatImage 4s ease-in-out infinite ;
   height: 300px;
   width: 300px;
+  box-shadow:  5px 5px 25px darkgray ;
 }
 
 @keyframes floatImage {
@@ -426,9 +432,8 @@ margin: 50px;
 @media screen and (max-width:930px) {
   .project_card{
     width:50%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 20px; 
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center; 
     align-items: center;
     margin: 10px;
